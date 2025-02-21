@@ -1,0 +1,1300 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project source="3.8.0" version="1.0">
+  This file is intended to be loaded by Logisim-evolution v3.8.0(https://github.com/logisim-evolution/).
+
+  <lib desc="#Wiring" name="0">
+    <tool name="Pin">
+      <a name="appearance" val="classic"/>
+    </tool>
+  </lib>
+  <lib desc="#Gates" name="1"/>
+  <lib desc="#Plexers" name="2"/>
+  <lib desc="#Arithmetic" name="3"/>
+  <lib desc="#Memory" name="4"/>
+  <lib desc="#I/O" name="5"/>
+  <lib desc="#TTL" name="6"/>
+  <lib desc="#TCL" name="7"/>
+  <lib desc="#Base" name="8"/>
+  <lib desc="#BFH-Praktika" name="9"/>
+  <lib desc="#Input/Output-Extra" name="10"/>
+  <lib desc="#Soc" name="11"/>
+  <main name="main"/>
+  <options>
+    <a name="gateUndefined" val="ignore"/>
+    <a name="simlimit" val="1000"/>
+    <a name="simrand" val="0"/>
+  </options>
+  <mappings>
+    <tool lib="8" map="Button2" name="Poke Tool"/>
+    <tool lib="8" map="Button3" name="Menu Tool"/>
+    <tool lib="8" map="Ctrl Button1" name="Menu Tool"/>
+  </mappings>
+  <toolbar>
+    <tool lib="8" name="Poke Tool"/>
+    <tool lib="8" name="Edit Tool"/>
+    <tool lib="8" name="Wiring Tool"/>
+    <tool lib="8" name="Text Tool"/>
+    <sep/>
+    <tool lib="0" name="Pin"/>
+    <tool lib="0" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+    </tool>
+    <sep/>
+    <tool lib="1" name="NOT Gate"/>
+    <tool lib="1" name="AND Gate"/>
+    <tool lib="1" name="OR Gate"/>
+    <tool lib="1" name="XOR Gate"/>
+    <tool lib="1" name="NAND Gate"/>
+    <tool lib="1" name="NOR Gate"/>
+    <sep/>
+    <tool lib="4" name="D Flip-Flop"/>
+    <tool lib="4" name="Register"/>
+  </toolbar>
+  <circuit name="main">
+    <a name="appearance" val="logisim_evolution"/>
+    <a name="circuit" val="main"/>
+    <a name="circuitnamedboxfixedsize" val="true"/>
+    <a name="simulationFrequency" val="256000.0"/>
+    <comp lib="0" loc="(1380,1800)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="RESET"/>
+    </comp>
+    <comp lib="0" loc="(1380,870)" name="Ground"/>
+    <comp lib="0" loc="(1760,2020)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="north"/>
+      <a name="label" val="WORKING_TIMER"/>
+      <a name="output" val="true"/>
+    </comp>
+    <comp lib="0" loc="(1900,2030)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="north"/>
+      <a name="label" val="SET_LET"/>
+      <a name="output" val="true"/>
+    </comp>
+    <comp lib="0" loc="(2670,1080)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="ALARMSOUND"/>
+      <a name="output" val="true"/>
+    </comp>
+    <comp lib="0" loc="(3820,1380)" name="Ground">
+      <a name="width" val="7"/>
+    </comp>
+    <comp lib="0" loc="(4140,1030)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="CATOZI"/>
+      <a name="output" val="true"/>
+      <a name="width" val="7"/>
+    </comp>
+    <comp lib="0" loc="(4160,1050)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="ANOZI"/>
+      <a name="output" val="true"/>
+      <a name="width" val="8"/>
+    </comp>
+    <comp lib="0" loc="(740,1340)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="CLK"/>
+    </comp>
+    <comp lib="1" loc="(2090,1110)" name="OR Gate">
+      <a name="facing" val="north"/>
+      <a name="size" val="30"/>
+    </comp>
+    <comp lib="5" loc="(1420,1180)" name="Button">
+      <a name="label" val="SET_ALARM"/>
+    </comp>
+    <comp lib="5" loc="(1420,1320)" name="Button">
+      <a name="label" val="OK_BUT"/>
+    </comp>
+    <comp lib="5" loc="(1420,1370)" name="Button">
+      <a name="label" val="START_BUT"/>
+    </comp>
+    <comp lib="5" loc="(1530,1590)" name="Button">
+      <a name="label" val="S"/>
+    </comp>
+    <comp lib="5" loc="(1530,1610)" name="Button">
+      <a name="label" val="M"/>
+    </comp>
+    <comp loc="(1220,1350)" name="ONEsec">
+      <a name="appearance" val="logisim_evolution"/>
+    </comp>
+    <comp loc="(1510,740)" name="frequencyDEVIDER">
+      <a name="appearance" val="logisim_evolution"/>
+    </comp>
+    <comp loc="(1810,1310)" name="CommandUnit">
+      <a name="appearance" val="logisim_evolution"/>
+    </comp>
+    <comp loc="(2330,1550)" name="BIGCNT"/>
+    <comp loc="(2380,1040)" name="alarma">
+      <a name="appearance" val="logisim_evolution"/>
+    </comp>
+    <comp loc="(2740,800)" name="reg_a">
+      <a name="appearance" val="logisim_evolution"/>
+    </comp>
+    <comp loc="(3120,1120)" name="Binary_to_decimal_converter">
+      <a name="appearance" val="logisim_evolution"/>
+      <a name="labelvisible" val="true"/>
+    </comp>
+    <comp loc="(3170,1570)" name="Binary_to_decimal_converter">
+      <a name="appearance" val="logisim_evolution"/>
+      <a name="labelvisible" val="true"/>
+    </comp>
+    <comp loc="(3190,1750)" name="Binary_to_decimal_converter">
+      <a name="appearance" val="logisim_evolution"/>
+    </comp>
+    <comp loc="(3480,1180)" name="bcd">
+      <a name="appearance" val="logisim_evolution"/>
+    </comp>
+    <comp loc="(3490,1720)" name="bcd">
+      <a name="appearance" val="logisim_evolution"/>
+      <a name="labelvisible" val="true"/>
+    </comp>
+    <comp loc="(3500,1050)" name="bcd">
+      <a name="appearance" val="logisim_evolution"/>
+      <a name="labelvisible" val="true"/>
+    </comp>
+    <comp loc="(3500,1790)" name="bcd">
+      <a name="appearance" val="logisim_evolution"/>
+      <a name="labelvisible" val="true"/>
+    </comp>
+    <comp loc="(3550,1540)" name="bcd">
+      <a name="appearance" val="logisim_evolution"/>
+      <a name="labelvisible" val="true"/>
+    </comp>
+    <comp loc="(3560,1610)" name="bcd">
+      <a name="appearance" val="logisim_evolution"/>
+    </comp>
+    <comp loc="(4070,1030)" name="anodss">
+      <a name="appearance" val="logisim_evolution"/>
+    </comp>
+    <wire from="(1220,1350)" to="(1290,1350)"/>
+    <wire from="(1290,1060)" to="(1290,1350)"/>
+    <wire from="(1290,1060)" to="(1930,1060)"/>
+    <wire from="(1290,1350)" to="(1530,1350)"/>
+    <wire from="(1290,760)" to="(1290,870)"/>
+    <wire from="(1290,870)" to="(1380,870)"/>
+    <wire from="(1380,1420)" to="(1380,1440)"/>
+    <wire from="(1380,1420)" to="(1540,1420)"/>
+    <wire from="(1380,1440)" to="(2400,1440)"/>
+    <wire from="(1380,1800)" to="(1450,1800)"/>
+    <wire from="(1420,1180)" to="(1980,1180)"/>
+    <wire from="(1420,1320)" to="(1470,1320)"/>
+    <wire from="(1420,1370)" to="(1530,1370)"/>
+    <wire from="(1450,1390)" to="(1450,1800)"/>
+    <wire from="(1450,1390)" to="(1590,1390)"/>
+    <wire from="(1450,1800)" to="(2050,1800)"/>
+    <wire from="(1470,1320)" to="(1470,1540)"/>
+    <wire from="(1470,1320)" to="(1570,1320)"/>
+    <wire from="(1470,1540)" to="(1990,1540)"/>
+    <wire from="(1510,740)" to="(3720,740)"/>
+    <wire from="(1530,1340)" to="(1530,1350)"/>
+    <wire from="(1530,1340)" to="(1550,1340)"/>
+    <wire from="(1530,1360)" to="(1530,1370)"/>
+    <wire from="(1530,1360)" to="(1570,1360)"/>
+    <wire from="(1530,1590)" to="(1560,1590)"/>
+    <wire from="(1530,1610)" to="(2110,1610)"/>
+    <wire from="(1540,1370)" to="(1540,1420)"/>
+    <wire from="(1540,1370)" to="(1590,1370)"/>
+    <wire from="(1550,1330)" to="(1550,1340)"/>
+    <wire from="(1550,1330)" to="(1590,1330)"/>
+    <wire from="(1560,1580)" to="(1560,1590)"/>
+    <wire from="(1560,1580)" to="(2110,1580)"/>
+    <wire from="(1570,1310)" to="(1570,1320)"/>
+    <wire from="(1570,1310)" to="(1590,1310)"/>
+    <wire from="(1570,1350)" to="(1570,1360)"/>
+    <wire from="(1570,1350)" to="(1590,1350)"/>
+    <wire from="(1760,2010)" to="(1760,2020)"/>
+    <wire from="(1760,2010)" to="(1870,2010)"/>
+    <wire from="(1810,1310)" to="(1910,1310)"/>
+    <wire from="(1810,1330)" to="(1900,1330)"/>
+    <wire from="(1810,1350)" to="(1870,1350)"/>
+    <wire from="(1810,1370)" to="(2140,1370)"/>
+    <wire from="(1870,1350)" to="(1870,2010)"/>
+    <wire from="(1900,1330)" to="(1900,2030)"/>
+    <wire from="(1910,1100)" to="(1910,1310)"/>
+    <wire from="(1910,1100)" to="(2160,1100)"/>
+    <wire from="(1930,1060)" to="(2030,1060)"/>
+    <wire from="(1930,860)" to="(1930,1060)"/>
+    <wire from="(1930,860)" to="(2520,860)"/>
+    <wire from="(1940,1510)" to="(1940,1650)"/>
+    <wire from="(1940,1510)" to="(2140,1510)"/>
+    <wire from="(1940,1650)" to="(2110,1650)"/>
+    <wire from="(1980,1180)" to="(1980,1190)"/>
+    <wire from="(1980,1190)" to="(2070,1190)"/>
+    <wire from="(1990,1540)" to="(1990,1560)"/>
+    <wire from="(1990,1560)" to="(2090,1560)"/>
+    <wire from="(2030,1060)" to="(2030,1550)"/>
+    <wire from="(2030,1060)" to="(2160,1060)"/>
+    <wire from="(2030,1550)" to="(2110,1550)"/>
+    <wire from="(2050,1630)" to="(2050,1730)"/>
+    <wire from="(2050,1630)" to="(2110,1630)"/>
+    <wire from="(2050,1730)" to="(2050,1800)"/>
+    <wire from="(2050,1730)" to="(2550,1730)"/>
+    <wire from="(2070,1140)" to="(2070,1190)"/>
+    <wire from="(2070,1140)" to="(2080,1140)"/>
+    <wire from="(2070,1200)" to="(2070,1240)"/>
+    <wire from="(2070,1200)" to="(2100,1200)"/>
+    <wire from="(2070,1240)" to="(2270,1240)"/>
+    <wire from="(2090,1080)" to="(2090,1110)"/>
+    <wire from="(2090,1080)" to="(2160,1080)"/>
+    <wire from="(2090,1560)" to="(2090,1570)"/>
+    <wire from="(2090,1570)" to="(2110,1570)"/>
+    <wire from="(2100,1140)" to="(2110,1140)"/>
+    <wire from="(2100,1170)" to="(2100,1200)"/>
+    <wire from="(2100,1170)" to="(2110,1170)"/>
+    <wire from="(2110,1140)" to="(2110,1170)"/>
+    <wire from="(2110,1580)" to="(2110,1590)"/>
+    <wire from="(2130,1130)" to="(2140,1130)"/>
+    <wire from="(2130,840)" to="(2130,1130)"/>
+    <wire from="(2130,840)" to="(2520,840)"/>
+    <wire from="(2140,1120)" to="(2140,1130)"/>
+    <wire from="(2140,1120)" to="(2160,1120)"/>
+    <wire from="(2140,1130)" to="(2140,1170)"/>
+    <wire from="(2140,1170)" to="(2550,1170)"/>
+    <wire from="(2140,1370)" to="(2140,1510)"/>
+    <wire from="(2160,910)" to="(2160,1040)"/>
+    <wire from="(2160,910)" to="(2850,910)"/>
+    <wire from="(2270,1240)" to="(2270,1520)"/>
+    <wire from="(2270,1520)" to="(2340,1520)"/>
+    <wire from="(2330,1540)" to="(2330,1550)"/>
+    <wire from="(2330,1540)" to="(2340,1540)"/>
+    <wire from="(2330,1570)" to="(2950,1570)"/>
+    <wire from="(2330,1590)" to="(2900,1590)"/>
+    <wire from="(2340,1520)" to="(2340,1540)"/>
+    <wire from="(2370,1020)" to="(2390,1020)"/>
+    <wire from="(2370,820)" to="(2370,1020)"/>
+    <wire from="(2370,820)" to="(2520,820)"/>
+    <wire from="(2380,1040)" to="(2400,1040)"/>
+    <wire from="(2380,1060)" to="(2400,1060)"/>
+    <wire from="(2380,1080)" to="(2670,1080)"/>
+    <wire from="(2380,1100)" to="(2390,1100)"/>
+    <wire from="(2390,1020)" to="(2390,1100)"/>
+    <wire from="(2400,1060)" to="(2400,1440)"/>
+    <wire from="(2400,950)" to="(2400,1040)"/>
+    <wire from="(2400,950)" to="(2410,950)"/>
+    <wire from="(2410,790)" to="(2410,950)"/>
+    <wire from="(2410,790)" to="(2510,790)"/>
+    <wire from="(2410,950)" to="(2900,950)"/>
+    <wire from="(2510,790)" to="(2510,800)"/>
+    <wire from="(2510,800)" to="(2520,800)"/>
+    <wire from="(2550,1170)" to="(2550,1730)"/>
+    <wire from="(2740,800)" to="(2850,800)"/>
+    <wire from="(2850,800)" to="(2850,910)"/>
+    <wire from="(2900,1590)" to="(2900,1750)"/>
+    <wire from="(2900,1750)" to="(2970,1750)"/>
+    <wire from="(2900,950)" to="(2900,1120)"/>
+    <wire from="(3120,1120)" to="(3180,1120)"/>
+    <wire from="(3120,1140)" to="(3180,1140)"/>
+    <wire from="(3170,1570)" to="(3270,1570)"/>
+    <wire from="(3170,1590)" to="(3340,1590)"/>
+    <wire from="(3180,1050)" to="(3180,1120)"/>
+    <wire from="(3180,1050)" to="(3280,1050)"/>
+    <wire from="(3180,1140)" to="(3180,1180)"/>
+    <wire from="(3180,1180)" to="(3260,1180)"/>
+    <wire from="(3190,1750)" to="(3250,1750)"/>
+    <wire from="(3190,1770)" to="(3270,1770)"/>
+    <wire from="(3250,1720)" to="(3250,1750)"/>
+    <wire from="(3250,1720)" to="(3270,1720)"/>
+    <wire from="(3270,1540)" to="(3270,1570)"/>
+    <wire from="(3270,1540)" to="(3330,1540)"/>
+    <wire from="(3270,1770)" to="(3270,1790)"/>
+    <wire from="(3270,1790)" to="(3280,1790)"/>
+    <wire from="(3340,1590)" to="(3340,1610)"/>
+    <wire from="(3480,1180)" to="(3680,1180)"/>
+    <wire from="(3490,1720)" to="(3700,1720)"/>
+    <wire from="(3500,1050)" to="(3710,1050)"/>
+    <wire from="(3500,1790)" to="(3730,1790)"/>
+    <wire from="(3550,1540)" to="(3650,1540)"/>
+    <wire from="(3560,1610)" to="(3660,1610)"/>
+    <wire from="(3650,1100)" to="(3650,1540)"/>
+    <wire from="(3650,1100)" to="(3840,1100)"/>
+    <wire from="(3660,1080)" to="(3660,1610)"/>
+    <wire from="(3660,1080)" to="(3840,1080)"/>
+    <wire from="(3680,1040)" to="(3680,1180)"/>
+    <wire from="(3680,1040)" to="(3840,1040)"/>
+    <wire from="(3700,1140)" to="(3700,1720)"/>
+    <wire from="(3700,1140)" to="(3840,1140)"/>
+    <wire from="(3710,1050)" to="(3710,1060)"/>
+    <wire from="(3710,1060)" to="(3840,1060)"/>
+    <wire from="(3720,1020)" to="(3840,1020)"/>
+    <wire from="(3720,740)" to="(3720,1020)"/>
+    <wire from="(3730,1130)" to="(3730,1790)"/>
+    <wire from="(3730,1130)" to="(3850,1130)"/>
+    <wire from="(3780,1170)" to="(3780,1190)"/>
+    <wire from="(3780,1170)" to="(3850,1170)"/>
+    <wire from="(3780,1190)" to="(3780,1340)"/>
+    <wire from="(3780,1190)" to="(3850,1190)"/>
+    <wire from="(3780,1340)" to="(3820,1340)"/>
+    <wire from="(3820,1340)" to="(3820,1380)"/>
+    <wire from="(3840,1020)" to="(3840,1030)"/>
+    <wire from="(3840,1030)" to="(3850,1030)"/>
+    <wire from="(3840,1040)" to="(3840,1050)"/>
+    <wire from="(3840,1050)" to="(3850,1050)"/>
+    <wire from="(3840,1060)" to="(3840,1070)"/>
+    <wire from="(3840,1070)" to="(3850,1070)"/>
+    <wire from="(3840,1080)" to="(3840,1090)"/>
+    <wire from="(3840,1090)" to="(3850,1090)"/>
+    <wire from="(3840,1100)" to="(3840,1110)"/>
+    <wire from="(3840,1110)" to="(3850,1110)"/>
+    <wire from="(3840,1140)" to="(3840,1150)"/>
+    <wire from="(3840,1150)" to="(3850,1150)"/>
+    <wire from="(4070,1030)" to="(4140,1030)"/>
+    <wire from="(4070,1050)" to="(4160,1050)"/>
+    <wire from="(740,1340)" to="(810,1340)"/>
+    <wire from="(810,1340)" to="(810,1350)"/>
+    <wire from="(810,1350)" to="(970,1350)"/>
+    <wire from="(970,1350)" to="(1000,1350)"/>
+    <wire from="(970,740)" to="(1290,740)"/>
+    <wire from="(970,740)" to="(970,1350)"/>
+  </circuit>
+  <circuit name="BIGCNT">
+    <a name="appearance" val="logisim_evolution"/>
+    <a name="circuit" val="BIGCNT"/>
+    <a name="circuitnamedboxfixedsize" val="true"/>
+    <a name="simulationFrequency" val="2.0"/>
+    <comp lib="0" loc="(1030,280)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="MIN_OUTPUT"/>
+      <a name="output" val="true"/>
+      <a name="width" val="8"/>
+    </comp>
+    <comp lib="0" loc="(120,710)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="RES"/>
+    </comp>
+    <comp lib="0" loc="(130,260)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="S"/>
+    </comp>
+    <comp lib="0" loc="(240,810)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="EN"/>
+    </comp>
+    <comp lib="0" loc="(40,200)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="But"/>
+    </comp>
+    <comp lib="0" loc="(500,170)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="SEC_OUTPUT"/>
+      <a name="output" val="true"/>
+      <a name="width" val="8"/>
+    </comp>
+    <comp lib="0" loc="(60,60)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="CLK"/>
+    </comp>
+    <comp lib="0" loc="(600,510)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="label" val="M"/>
+    </comp>
+    <comp lib="0" loc="(860,130)" name="Pin">
+      <a name="appearance" val="NewPins"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="ALARMOUTPUT"/>
+      <a name="output" val="true"/>
+    </comp>
+    <comp loc="(460,170)" name="seconds">
+      <a name="appearance" val="logisim_evolution"/>
+    </comp>
+    <comp loc="(900,280)" name="minutes">
+      <a name="appearance" val="logisim_evolution"/>
+    </comp>
+    <wire from="(0,120)" to="(0,150)"/>
+    <wire from="(0,120)" to="(30,120)"/>
+    <wire from="(0,150)" to="(120,150)"/>
+    <wire from="(120,150)" to="(120,170)"/>
+    <wire from="(120,170)" to="(240,170)"/>
+    <wire from="(120,710)" to="(130,710)"/>
+    <wire from="(130,260)" to="(140,260)"/>
+    <wire from="(130,450)" to="(130,710)"/>
+    <wire from="(130,450)" to="(680,450)"/>
+    <wire from="(140,210)" to="(140,260)"/>
+    <wire from="(140,210)" to="(240,210)"/>
+    <wire from="(160,290)" to="(160,300)"/>
+    <wire from="(160,290)" to="(240,290)"/>
+    <wire from="(180,250)" to="(180,550)"/>
+    <wire from="(180,250)" to="(240,250)"/>
+    <wire from="(180,550)" to="(950,550)"/>
+    <wire from="(20,250)" to="(20,590)"/>
+    <wire from="(20,250)" to="(60,250)"/>
+    <wire from="(20,590)" to="(540,590)"/>
+    <wire from="(210,230)" to="(210,480)"/>
+    <wire from="(210,230)" to="(240,230)"/>
+    <wire from="(210,480)" to="(980,480)"/>
+    <wire from="(230,270)" to="(230,780)"/>
+    <wire from="(230,270)" to="(240,270)"/>
+    <wire from="(230,780)" to="(250,780)"/>
+    <wire from="(240,810)" to="(250,810)"/>
+    <wire from="(250,780)" to="(250,810)"/>
+    <wire from="(250,810)" to="(280,810)"/>
+    <wire from="(280,810)" to="(280,890)"/>
+    <wire from="(280,890)" to="(670,890)"/>
+    <wire from="(30,120)" to="(630,120)"/>
+    <wire from="(30,90)" to="(30,120)"/>
+    <wire from="(30,90)" to="(80,90)"/>
+    <wire from="(40,200)" to="(60,200)"/>
+    <wire from="(460,170)" to="(500,170)"/>
+    <wire from="(460,190)" to="(480,190)"/>
+    <wire from="(460,210)" to="(820,210)"/>
+    <wire from="(460,230)" to="(480,230)"/>
+    <wire from="(480,190)" to="(480,200)"/>
+    <wire from="(480,200)" to="(520,200)"/>
+    <wire from="(480,230)" to="(480,350)"/>
+    <wire from="(480,350)" to="(660,350)"/>
+    <wire from="(520,200)" to="(520,310)"/>
+    <wire from="(520,310)" to="(550,310)"/>
+    <wire from="(540,390)" to="(540,590)"/>
+    <wire from="(540,390)" to="(600,390)"/>
+    <wire from="(550,310)" to="(550,320)"/>
+    <wire from="(550,320)" to="(680,320)"/>
+    <wire from="(570,230)" to="(570,270)"/>
+    <wire from="(570,230)" to="(630,230)"/>
+    <wire from="(570,270)" to="(580,270)"/>
+    <wire from="(580,270)" to="(580,280)"/>
+    <wire from="(580,280)" to="(680,280)"/>
+    <wire from="(60,200)" to="(60,250)"/>
+    <wire from="(60,200)" to="(90,200)"/>
+    <wire from="(60,300)" to="(160,300)"/>
+    <wire from="(60,300)" to="(60,450)"/>
+    <wire from="(60,450)" to="(130,450)"/>
+    <wire from="(60,60)" to="(80,60)"/>
+    <wire from="(600,300)" to="(600,390)"/>
+    <wire from="(600,300)" to="(680,300)"/>
+    <wire from="(600,510)" to="(650,510)"/>
+    <wire from="(630,120)" to="(630,230)"/>
+    <wire from="(640,360)" to="(640,500)"/>
+    <wire from="(640,360)" to="(680,360)"/>
+    <wire from="(640,500)" to="(650,500)"/>
+    <wire from="(650,500)" to="(650,510)"/>
+    <wire from="(660,340)" to="(660,350)"/>
+    <wire from="(660,340)" to="(680,340)"/>
+    <wire from="(670,380)" to="(670,890)"/>
+    <wire from="(670,380)" to="(680,380)"/>
+    <wire from="(680,400)" to="(680,450)"/>
+    <wire from="(80,60)" to="(80,90)"/>
+    <wire from="(820,130)" to="(820,210)"/>
+    <wire from="(820,130)" to="(860,130)"/>
+    <wire from="(890,320)" to="(900,320)"/>
+    <wire from="(90,190)" to="(240,190)"/>
+    <wire from="(90,190)" to="(90,200)"/>
+    <wire from="(900,280)" to="(1030,280)"/>
+    <wire from="(900,300)" to="(980,300)"/>
+    <wire from="(900,320)" to="(950,320)"/>
+    <wire from="(950,320)" to="(950,550)"/>
+    <wire from="(980,300)" to="(980,480)"/>
+  </circuit>
+  <vhdl name="freq_divider">--------------------------------------------------------------------------------&#13;
+-- Project :&#13;
+-- File    :&#13;
+-- Autor   :&#13;
+-- Date    :&#13;
+--&#13;
+--------------------------------------------------------------------------------&#13;
+-- Description :&#13;
+--&#13;
+--------------------------------------------------------------------------------&#13;
+&#13;
+LIBRARY ieee;&#13;
+USE ieee.std_logic_1164.all;&#13;
+&#13;USE IEEE.std_logic_UNSIGNED.all;
+ENTITY freq_divider IS&#13;
+  PORT (&#13;
+  ------------------------------------------------------------------------------&#13;
+  --Insert input ports below&#13;
+    clock      : IN  std_logic;                    -- input bit example&#13;
+    new_clock_1hz : OUT std_logic
+    );&#13;
+END freq_divider;&#13;
+&#13;
+--------------------------------------------------------------------------------&#13;
+--Complete your VHDL description below&#13;
+--------------------------------------------------------------------------------&#13;
+&#13;
+ARCHITECTURE TypeArchitecture OF freq_divider IS&#13;
+&#13;	
+BEGIN&#13;
+&#13;	process(clock)
+	variable nr: std_logic_vector(25 downto 0) := (others =&gt; '0');
+	begin
+		if clock'event and clock='1' then
+			nr := nr+1;
+		end if;
+	new_clock_1hz &lt;= nr(25);
+	end process;
+&#13;
+END TypeArchitecture;&#13;
+</vhdl>
+  <vhdl name="ONEsec">--------------------------------------------------------------------------------
+-- Project :
+-- File    :
+-- Autor   :
+-- Date    :
+--
+--------------------------------------------------------------------------------
+-- Description :
+--
+--------------------------------------------------------------------------------
+
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+
+use IEEE.STD_LOGIC_UNSIGNED.ALL;
+ENTITY ONEsec IS
+  PORT (
+  clk : in std_logic;
+  newclk : out std_logic
+    );
+END ONEsec;
+
+
+ARCHITECTURE TypeArchitecture OF ONEsec IS
+
+BEGIN
+
+process (clk)
+variable count: std_logic_vector(25 downto 0) := (others =&gt; '0');
+variable D : std_logic := '0';
+begin
+if (rising_edge(clk)) then
+ if (count = "10111110101111000010000000") then
+  count := (others =&gt; '0');
+  D := not D;
+  else
+  count := count + '1'; 
+ end if;
+end if;
+newclk &lt;= D;
+end process;
+END TypeArchitecture;</vhdl>
+  <vhdl name="alarma">--------------------------------------------------------------------------------&#13;
+-- Project :&#13;
+-- File    :&#13;
+-- Autor   :&#13;
+-- Date    :&#13;
+--&#13;
+--------------------------------------------------------------------------------&#13;
+-- Description :&#13;
+--&#13;
+--------------------------------------------------------------------------------&#13;
+&#13;
+LIBRARY ieee;&#13;
+USE ieee.std_logic_1164.all;&#13;
+&#13;USE ieee.STD_LOGIC_UNSIGNED.all;
+ENTITY alarma IS&#13;
+  PORT (&#13;
+  ------------------------------------------------------------------------------&#13;
+  --Insert input ports below&#13;
+ 	 reload_register :in std_logic_vector(7 downto 0);  
+    clock      : IN  std_logic;                    -- input bit example&#13;
+    button : IN std_logic;
+    counter_output : OUT std_logic_vector(7 downto 0);
+    set_alarm: IN std_logic;
+    alarm_buzz : OUT std_logic;
+    alarm_sound : OUT std_logic;
+    load_register : OUT std_logic ;
+   
+    reset : IN std_logic
+    );&#13;
+END alarma;&#13;
+&#13;
+--------------------------------------------------------------------------------&#13;
+--Complete your VHDL description below&#13;
+--------------------------------------------------------------------------------&#13;
+&#13;
+ARCHITECTURE TypeArchitecture OF alarma IS&#13;
+
+signal mode : std_logic := '0' ; -- 1 is up, 0 is down&#13;
+signal internal_state : std_logic_vector(2 downto 0) := "000"; --00 is up, 01 is hold; 11 is down; 100 is reload reload_register; 101 is new hold before up;
+BEGIN&#13;
+&#13;	process(clock, button)
+	variable counter : std_logic_vector(7 downto 0):=(others=&gt; '0');
+	variable enable : std_logic;
+	begin
+		if(internal_state = "000") then 
+			alarm_buzz &lt;= '0';
+		end if;
+		if(reset = '1') then
+			internal_state &lt;= "000";
+			counter := "00000000";
+			alarm_buzz &lt;= '0';
+			alarm_sound &lt;= '0';
+			load_register &lt;= '0';
+		else		
+		if(button = '1' and internal_state = "000") then
+			load_register &lt;= '0';
+			internal_state &lt;= "001";
+		elsif(button = '1' and internal_state = "001" ) then
+			internal_state &lt;= "010";
+			load_register &lt;= '1';
+		elsif(button = '1' and (internal_state = "101" or internal_state = "010") and set_alarm = '0' ) then
+			internal_state &lt;= "011";
+			load_register &lt;= '0';
+		elsif(internal_state = "100") then
+			counter := reload_register;
+			internal_state &lt;= "101";
+			
+		end if;
+		alarm_sound &lt;= '0';
+		if(rising_edge(clock)) then
+		if(internal_state = "001" or internal_state = "011") then enable := '1';
+		else enable := '0';
+		end if;
+		if(enable = '1' and internal_state = "001") then
+				counter := counter + 1;
+				if counter = "00111011" then
+					counter := "00000000";
+				end if; 
+		elsif(enable = '1' and (internal_state = "011" or internal_state = "101")) then
+				alarm_sound &lt;= '1';
+				counter := counter - 1;
+				if(counter = "00000000") then
+					enable := '0';
+					internal_state &lt;= "100";
+					alarm_buzz &lt;= '1';
+				end if;
+			end if;
+	end if;
+	end if;
+	counter_output &lt;= counter;
+	end process;
+	
+
+	
+					
+&#13;
+END TypeArchitecture;&#13;
+</vhdl>
+  <vhdl name="seconds">--------------------------------------------------------------------------------
+-- Project :
+-- File    :
+-- Autor   :
+-- Date    :
+--
+--------------------------------------------------------------------------------
+-- Description :
+--
+--------------------------------------------------------------------------------
+
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+
+USE ieee.STD_LOGIC_UNSIGNED.all;
+ENTITY seconds IS
+  PORT (
+  ------------------------------------------------------------------------------
+  --Insert input ports below
+    clock      : IN  std_logic;                    -- input bit example
+    button : IN std_logic;
+    counter_output : OUT std_logic_vector(7 downto 0);
+    clock_1_min: OUT std_logic;
+    inputfors: IN std_logic;
+    borrow: in std_logic;
+    alarm_output: OUT std_logic;
+    decrease : OUT std_logic;
+    hold_state : IN std_logic;
+    CU_EN : IN std_logic;
+    reset : IN std_logic
+    
+    );
+END seconds;
+
+--------------------------------------------------------------------------------
+--Complete your VHDL description below
+--------------------------------------------------------------------------------
+
+ARCHITECTURE TypeArchitecture OF seconds IS
+
+signal mode : std_logic := '0' ; -- 1 is up, 0 is down
+signal internal_state : std_logic_vector(2 downto 0) := "000"; --000 hold, 001 count up, 010 set-up, 011 is hold, 100 is decrease, 101 is HOLD FROM M
+BEGIN
+
+	process(clock)
+	variable counter : std_logic_vector(7 downto 0):=(others=&gt; '0');
+	variable enable : std_logic;
+	begin
+		alarm_output &lt;= '0';
+		if(rising_edge(clock)) then
+		clock_1_min &lt;= '0';
+		if(reset = '1' or CU_EN = '0') then
+			internal_state &lt;= "000";
+			counter := "00000000";
+			alarm_output &lt;= '0';
+		else		
+		if(inputfors = '1' and (internal_state = "000" or internal_state = "001" or internal_state = "101" )) then
+			internal_state &lt;= "010";
+		elsif(inputfors = '1' and internal_state = "010") then
+		internal_state &lt;= "011";
+		elsif(hold_state = '1') then
+		internal_state &lt;= "101";
+		end if;
+		
+		if(button = '1' and internal_state = "000") then
+			internal_state &lt;= "001";
+		elsif(button = '1' and internal_state = "001" ) then
+			internal_state &lt;= "000";
+		elsif(button = '1' and internal_state = "011") then
+			internal_state &lt;= "100";
+		elsif(button = '1' and internal_state = "101") then
+			internal_state &lt;= "100";
+		end if;
+		if(internal_state = "001" or internal_state = "010" or internal_state = "100") then enable := '1';
+		else enable := '0';
+		end if;
+		if(enable = '1' and (internal_state = "001" or internal_state = "010" )) then
+				counter := counter + 1;
+				if counter = "00111011" then
+					clock_1_min &lt;= '1';
+					counter := "00000000";
+				end if; 
+				end if;
+		if(enable = '1' and internal_state = "100") then
+			if counter = "00000001" then
+				clock_1_min &lt;= '1';
+				if(borrow = '1') then
+					counter := "00111011";
+				else 
+				internal_state &lt;= "000";
+				alarm_output &lt;= '1';
+				end if;
+			end if;	
+			counter := counter - 1;
+		end if;
+			end if;
+	end if;
+	decrease &lt;= internal_state(2) and not(internal_state(0));
+	counter_output &lt;= counter;
+	end process;
+	
+
+	
+					
+
+END TypeArchitecture;
+</vhdl>
+  <vhdl name="minutes">--------------------------------------------------------------------------------
+-- Project :
+-- File    :
+-- Autor   :
+-- Date    :
+--
+--------------------------------------------------------------------------------
+-- Description :
+--
+--------------------------------------------------------------------------------
+
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+
+USE ieee.STD_LOGIC_UNSIGNED.all;
+ENTITY minutes IS
+  PORT (
+  ------------------------------------------------------------------------------
+  --Insert input ports below
+    clock : IN  std_logic;                    -- input bit example
+    button : IN std_logic;
+    counter_output : OUT std_logic_vector(7 downto 0);
+    in_clk: IN std_logic;
+    borrow : OUT std_logic;
+    decrease:IN std_logic;
+    inputform : IN std_logic;
+    ENABLE_FROM_CU : IN std_logic;
+    output_hold_seconds: OUT std_logic;
+    reset : IN std_logic
+    );
+END minutes;
+
+--------------------------------------------------------------------------------
+--Complete your VHDL description below
+--------------------------------------------------------------------------------
+
+ARCHITECTURE TypeArchitecture OF minutes IS
+
+signal mode : std_logic := '0' ; -- 1 is up, 0 is down
+signal internal_state : std_logic_vector(2 downto 0) := "000"; --000 is hold, 001 is up, 010 is set-up, 011 is hold, 100 is decrease
+BEGIN
+
+	process(clock)
+	variable counter : std_logic_vector(7 downto 0):=(others=&gt; '0');
+	variable enable : std_logic;
+	begin
+		if(rising_edge(clock)) then
+			output_hold_seconds &lt;= '0';
+			if(reset = '1' or ENABLE_FROM_CU = '0') then
+			internal_state &lt;= "000";
+			counter := "00000000";
+			else		
+				if(internal_state = "000" and in_clk = '1') then
+				internal_state &lt;= "001";
+				elsif(decrease = '1') then
+				internal_state&lt;= "100";
+				elsif((internal_state = "000" or internal_state = "001") and inputform = '1') then
+				internal_state &lt;= "010"; 
+				output_hold_seconds &lt;= '1';
+				elsif(internal_state = "010" and inputform = '1') then
+				internal_state &lt;= "100";
+				end if;
+				if((in_clk = '1' and (internal_state ="000" or internal_state = "001"))or internal_state = "010") then
+					counter := counter+1;
+					if(counter = "01100100") then
+						counter := "00000000";
+					end if;
+				elsif(in_clk = '1' and internal_state = "100")then 
+					if(counter = "00000000") then 
+					internal_state &lt;= "000";
+					else
+					counter := counter - 1;
+					end if;
+				end if;
+			end if;
+	end if;
+	borrow &lt;= counter(0) or counter(1) or counter(2) or counter(3) or counter(4) or counter(5) or counter(6) or counter(7);
+	counter_output &lt;= counter;
+	end process;
+	
+
+	
+					
+
+END TypeArchitecture;
+</vhdl>
+  <vhdl name="Binary_to_decimal_converter">--------------------------------------------------------------------------------
+-- Project :
+-- File    :
+-- Autor   :
+-- Date    :
+--
+--------------------------------------------------------------------------------
+-- Description :
+--
+--------------------------------------------------------------------------------
+
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+USE ieee.std_logic_unsigned.all;
+USE ieee.std_logic_arith.all;
+
+ENTITY Binary_to_decimal_converter IS
+  PORT (
+ Bin_num: in std_logic_vector(7 downto 0);
+  		Unit: out std_logic_vector(3 downto 0);
+  		Decimal: out std_logic_vector(3 downto 0)  
+    );
+END Binary_to_decimal_converter;
+
+--------------------------------------------------------------------------------
+--Complete your VHDL description below
+--------------------------------------------------------------------------------
+
+ARCHITECTURE comport OF Binary_to_decimal_converter IS
+
+signal num_int: integer:=0;
+signal u,z: integer:=0;
+BEGIN
+
+	num_int&lt;=conv_integer(bin_num);
+	z&lt;=num_int / 10;
+	u&lt;=num_int rem 10;
+	process(u)
+	begin
+		case u is
+		when 0 =&gt; unit &lt;= x"0";
+		when 1 =&gt; unit &lt;= x"1";
+		when 2 =&gt; unit &lt;= x"2";
+		when 3 =&gt; unit &lt;= x"3";
+		when 4 =&gt; unit &lt;= x"4";
+		when 5 =&gt; unit &lt;= x"5";
+		when 6 =&gt; unit &lt;= x"6";
+		when 7 =&gt; unit &lt;= x"7";
+		when 8 =&gt; unit &lt;= x"8";
+		when 9 =&gt; unit &lt;= x"9";
+		when others =&gt; unit &lt;=x"f";
+		end case;
+	end process;
+	process(z)
+	begin
+		case z is
+		when 0 =&gt; Decimal &lt;= x"0";
+		when 1 =&gt; Decimal &lt;= x"1";
+		when 2 =&gt; Decimal &lt;= x"2";
+		when 3 =&gt; Decimal &lt;= x"3";
+		when 4 =&gt; Decimal &lt;= x"4";
+		when 5 =&gt; Decimal &lt;= x"5";
+		when 6 =&gt; Decimal &lt;= x"6";
+		when 7 =&gt; Decimal &lt;= x"7";
+		when 8 =&gt; Decimal &lt;= x"8";
+		when 9 =&gt; Decimal &lt;= x"9";
+		when others =&gt; Decimal &lt;=x"f";
+		end case;
+	end process;
+		 
+
+	
+END comport;
+</vhdl>
+  <vhdl name="CommandUnit">--------------------------------------------------------------------------------&#13;
+-- Project :&#13; 	MERGE PE PLACUTA IN,LOGISIM NU
+-- File    :&#13;
+-- Autor   :&#13;
+-- Date    :&#13;
+--&#13;
+--------------------------------------------------------------------------------&#13;
+-- Description :&#13;
+--&#13;
+--------------------------------------------------------------------------------&#13;
+&#13;
+LIBRARY ieee;&#13;
+USE ieee.std_logic_1164.all;&#13;
+&#13;
+ENTITY CommandUnit IS&#13;
+  PORT (&#13;
+  ------------------------------------------------------------------------------&#13;
+  --Insert input ports below&#13;
+    OK_BUT,clk      : IN  std_logic;                    -- input bit example&#13;
+    START_BUT: IN std_logic;
+  	EN_ALARM_UP : OUT std_logic;
+  	SET_LED : OUT std_logic;
+  	WORKING_TIMER : OUT std_logic;
+  	ENABLE_BIGCNT : out std_logic;
+  	alarm_input_over : in std_logic;
+  	reset : IN std_logic
+  	
+    );
+END CommandUnit;&#13;
+&#13;
+--------------------------------------------------------------------------------&#13;
+--Complete your VHDL description below&#13;
+--------------------------------------------------------------------------------&#13;
+&#13;
+ARCHITECTURE TypeArchitecture OF CommandUnit IS&#13;
+&#13;type stare is ( Beginning, Idle, ZERO, Ceas_working);
+signal stare_act, nxt : stare := Beginning; -- IDLE asteapta setare secunde
+BEGIN&#13;
+&#13;	process(clk, reset)
+	begin
+		if reset = '1' then stare_act&lt;=Beginning;
+		else
+			if(rising_edge(clk)) then 
+				stare_act&lt;=nxt;
+			end if;
+		end if;
+	end process;
+	process(stare_act, OK_BUT, START_BUT) --stabilirea starii urmatoare
+	begin	
+			EN_ALARM_UP &lt;= '0';
+			SET_LED &lt;= '0';
+			WORKING_TIMER &lt;= '0';
+			ENABLE_BIGCNT &lt;= '0';
+		case stare_act is
+			when Beginning =&gt; if START_BUT = '1' then nxt &lt;= Idle;
+							else nxt&lt;= Beginning;
+						end if;
+			when Idle =&gt; SET_LED&lt;='1';
+					   EN_ALARM_UP &lt;= '1';
+					   if OK_BUT = '1' then nxt &lt;= ZERO;
+					   else nxt &lt;= Idle;
+					   end if;
+			when ZERO =&gt; SET_LED &lt;= '0';
+					   EN_ALARM_UP &lt;= '0';
+					   WORKING_TIMER &lt;= '1';
+					   if OK_BUT = '1' then nxt &lt;= Ceas_working;
+					   else nxt &lt;= ZERO;
+					   end if;
+			when Ceas_working =&gt; ENABLE_bigcnt &lt;= '1';
+			when others =&gt; nxt &lt;= Beginning;
+					   	   
+		end case;
+	end process;  
+&#13;
+END TypeArchitecture;&#13;
+</vhdl>
+  <vhdl name="mpg">library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.STD_LOGIC_ARITH.ALL; 
+use IEEE.STD_LOGIC_UNSIGNED.ALL;
+
+-- Uncomment the following library declaration if using
+-- arithmetic functions with Signed or Unsigned values
+--use IEEE.NUMERIC_STD.ALL;
+
+-- Uncomment the following library declaration if instantiating
+-- any Xilinx leaf cells in this code.
+--library UNISIM;
+--use UNISIM.VComponents.all;
+
+entity mpg is
+  Port ( clk: in STD_LOGIC;
+         btn : in STD_LOGIC_VECTOR(4 downto 0); 
+         enable : out STD_LOGIC_VECTOR(4 downto 0));
+end mpg;
+
+architecture pulsegen of mpg is
+
+signal cnt : STD_LOGIC_VECTOR(15 downto 0);
+signal en : STD_LOGIC;
+signal q1 : STD_LOGIC_VECTOR(4 downto 0);
+signal q2 : STD_LOGIC_VECTOR(4 downto 0);
+signal q3 : STD_LOGIC_VECTOR(4 downto 0);
+
+begin
+
+process(clk)
+begin
+    if clk'event and clk='1' then
+         cnt &lt;= cnt + 1;
+    end if;
+end process;
+
+process(cnt)
+begin
+    if cnt=x"FFFF" then
+        en &lt;= '1';
+    else
+        en &lt;= '0';
+    end if;
+end process;
+
+process(clk)
+begin
+    if clk'event and clk='1' then
+        if en = '1' then
+            q1 &lt;= btn;
+        end if;
+    end if;
+end process;
+
+process(clk)
+begin
+    if clk'event and clk='1' then
+        q2 &lt;= q1;
+    end if;
+end process;
+
+process(clk)
+begin
+    if clk'event and clk='1' then
+        q3 &lt;= q2;
+    end if;
+end process;
+
+enable &lt;= q2 and (not q3);
+
+end pulsegen;</vhdl>
+  <vhdl name="bcd">--------------------------------------------------------------------------------
+-- Project :
+-- File    :
+-- Autor   :
+-- Date    :
+--
+--------------------------------------------------------------------------------
+-- Description :
+--
+--------------------------------------------------------------------------------
+
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+
+ENTITY bcd IS
+  PORT (
+  number: in std_logic_vector(3 downto 0);
+  segment: out std_logic_vector(6 downto 0)
+    );
+END bcd;
+
+--------------------------------------------------------------------------------
+--Complete your VHDL description below
+--------------------------------------------------------------------------------
+
+ARCHITECTURE TypeArchitecture OF bcd IS
+
+signal aux:std_logic_vector (6 downto 0);
+BEGIN
+
+with number select
+ aux &lt;=
+ "1111110" when x"0",
+ "0110000" when x"1",
+ "1101101" when x"2",
+ "1111001" when x"3",
+ "0110011" when x"4",
+ "1011011" when x"5",
+ "1011111" when x"6",
+ "1110000" when x"7",
+ "1111111" when x"8",
+ "1111011" when x"9",
+ "0000000" when others;
+segment &lt;= aux;
+
+END TypeArchitecture;
+</vhdl>
+  <vhdl name="anodss">LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+
+ENTITY anodss IS
+  PORT (
+  
+    CLK: in std_logic;
+    s: out std_logic_vector (6 downto 0);
+    AN: out std_logic_vector (7 downto 0);
+    segment1, segment2, segment3, segment4, segment5, segment6, segment7, segment8: in std_logic_vector(6 downto 0)
+    );
+END anodss;
+
+ARCHITECTURE moveanods OF anodss IS
+
+BEGIN
+process (CLK)
+variable segment:  std_logic_vector (6 downto 0);
+variable anozi:  std_logic_vector (7 downto 0);
+begin
+ if ( CLK = '1') and (CLK'EVENT) then
+   case anozi is 
+   when "10000000" =&gt; anozi := "01000000"; segment := segment2;
+   when "01000000" =&gt; anozi := "00100000"; segment := segment3;
+   when "00100000" =&gt; anozi := "00010000"; segment := segment4;
+   when "00010000" =&gt; anozi := "00001000"; segment := segment5;
+   when "00001000" =&gt; anozi := "00000100"; segment := segment6;
+   when "00000100" =&gt; anozi := "00000010"; segment := segment7;
+   when "00000010" =&gt; anozi := "00000001"; segment := segment8;
+   when "00000001" =&gt; anozi := "10000000"; segment := segment1;
+   when others =&gt; anozi := "10000000"; segment := segment1;
+   end case;
+ end if;
+ AN &lt;= anozi;
+ s &lt;= Segment;
+end process;
+END moveanods;</vhdl>
+  <vhdl name="frequencyDEVIDER">LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+USE ieee.std_logic_UNSIGNED.all;
+
+ENTITY frequencyDEVIDER IS
+  PORT (
+    CLK, reset : in  std_logic;
+    newClock, newclock2   : out std_logic
+    );
+END frequencyDEVIDER;
+
+
+ARCHITECTURE devide OF frequencyDEVIDER IS
+ 
+ BEGIN
+process (CLK)
+   variable counter: std_logic_vector (14 downto 0) := (others =&gt; '0');
+   variable counter2: std_logic_vector (23 downto 0) := (others =&gt; '0');
+  begin
+   if (CLK = '1') and (CLK'EVENT) then
+    if (reset ='1') then
+    counter := (others =&gt; '0');
+    counter2 := (others =&gt; '0');
+    else
+    counter := counter + 1;
+    counter2 := counter2 + 1;
+    end if;
+   end if;
+   newClock &lt;= counter (14);
+   newClock2 &lt;= counter2 (23);
+  end process;
+END devide;</vhdl>
+  <vhdl name="RisingEdge_DFlipFlop">-- FPGA projects using VHDL/ VHDL 
+-- fpga4student.com
+-- VHDL code for D Flip FLop
+-- VHDL code for rising edge D flip flop 
+Library IEEE;
+USE IEEE.Std_logic_1164.all;
+
+entity RisingEdge_DFlipFlop is 
+   port(
+      Q : out std_logic;    
+      Clk :in std_logic;   
+      D :in  std_logic    
+   );
+end RisingEdge_DFlipFlop;
+architecture Behavioral of RisingEdge_DFlipFlop is  
+begin  
+ process(Clk)
+ begin 
+    if(rising_edge(Clk)) then
+   Q &lt;= D; 
+    end if;       
+ end process;  
+ end architecture;</vhdl>
+  <vhdl name="andGate">-- VHDL Code for AND gate
+
+-- Header file declaration
+
+library IEEE;
+use IEEE.std_logic_1164.all;
+
+-- Entity declaration
+
+entity andGate is
+
+    port(A : in std_logic;      -- AND gate input
+         B : in std_logic;      -- AND gate input
+         Y : out std_logic);    -- AND gate output
+
+end andGate;
+
+-- Dataflow Modelling Style
+-- Architecture definition
+
+architecture andLogic of andGate is
+
+ begin
+    
+    Y &lt;= A AND B;
+
+end andLogic; </vhdl>
+  <vhdl name="reg_a">Library IEEE;
+
+use IEEE.std_logic_1164.all;
+
+entity reg_a is
+
+port ( rega_input :in  std_logic_vector(7 downto 0) ;
+
+writ: in std_logic;
+
+reset: in std_logic;
+
+clk: in std_logic;
+rega_output: out std_logic_vector(7 downto 0) 
+
+ );
+
+end reg_a;
+
+architecture sim of reg_a is
+
+ begin
+
+process(clk) 
+
+   begin
+
+ if rising_edge(clk) then
+
+if(writ='1') then  
+
+rega_output&lt;=rega_input;
+
+  elsif(reset='1') then
+
+  rega_output&lt;="00000000";     
+
+
+end if;
+
+      end if;
+
+        end process;
+
+end sim; </vhdl>
+</project>
