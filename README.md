@@ -3,6 +3,8 @@
 ## Overview
 This project implements a timer using an FPGA, designed as a Digital Systems Design (DSD) first-year project. The timer allows users to set and control time using a set of buttons and displays the time on a seven-segment BCD display.
 
+![Screenshot 2025-02-21 202806](https://github.com/user-attachments/assets/508e0a34-8fc3-4680-a083-0ba7b989f6d5)
+
 ## Features
 - **6 BCD 7-segment displays**: Displays minutes, seconds, and alarm time.
 - **Max time display**: 99 minutes and 59 seconds.
@@ -16,6 +18,7 @@ This project implements a timer using an FPGA, designed as a Digital Systems Des
 - **Reset functionality**: Holding `M` and `S` resets the timer.
 
 ## Design
+![Image](https://github.com/user-attachments/assets/4b1cf440-331c-48ca-812b-bcc393797622)
 ### Black Box Model
 - **Inputs**:
   - Clock (CLK) from the FPGA
